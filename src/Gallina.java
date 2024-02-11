@@ -1,10 +1,6 @@
-public class Gallina extends Ave implements Volar{
-    public void vuela() {
-        System.out.println("Vuela con alas");
-    }
-
-    @java.lang.Override
-    public void makeSound() {
-        System.out.println("Grasna");
+public class Gallina extends Ave{
+    public Gallina() {
+        tipoSonido=new Grasnido();
+        tipoVuelo=new VueloConAlas();
     }
 }
