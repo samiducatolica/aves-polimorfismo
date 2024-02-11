@@ -1,6 +1,6 @@
 public class Avestruz extends Ave{
     public Avestruz() {
-        tipoSonido=new SinCanto();
-        tipoVuelo = new SinVuelo();
+        this.setTipoSonido(new SinCanto());
+        this.setTipoVuelo(new SinVuelo());
     }
 }

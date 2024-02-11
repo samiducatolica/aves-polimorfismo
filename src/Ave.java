@@ -1,6 +1,6 @@
 public abstract class Ave {
-    TipoSonido tipoSonido;
-    TipoVuelo tipoVuelo;
+    private TipoSonido tipoSonido;
+    private TipoVuelo tipoVuelo;
 
     public void realizaVuelo(){
         tipoVuelo.vuelo();
@@ -9,4 +9,11 @@ public abstract class Ave {
         tipoSonido.makeSound();
     }
 
+    public void setTipoVuelo(TipoVuelo tipoVuelo) {
+        this.tipoVuelo = tipoVuelo;
+    }
+
+    public void setTipoSonido(TipoSonido tipoSonido) {
+        this.tipoSonido = tipoSonido;
+    }
 }
