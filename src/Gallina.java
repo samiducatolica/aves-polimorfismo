@@ -1,5 +1,4 @@
-public class Gallina extends Ave{
-    @java.lang.Override
+public class Gallina extends Ave implements Volar{
     public void vuela() {
         System.out.println("Vuela con alas");
     }
